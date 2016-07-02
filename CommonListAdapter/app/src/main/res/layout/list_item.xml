@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#616161"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_title"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/item_img"
+   />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/item_img"
+        />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_time"
+        android:layout_alignTop="@+id/item_img_mobile"
+        android:layout_toRightOf="@+id/item_img"
+        android:layout_toEndOf="@+id/item_img"/>
+
+
+    <ImageView
+        android:id="@+id/item_img_mobile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <!--对于一些控件如Button，CheckBox抢占ListView的焦点的解决方法
+
+        1、直接在控件中如CheckBox中android：clickable=“true”
+        2、在Item的最外层布局中添加android：desendantFoucsability=“blockDesndants”
+    -->
+    <CheckBox
+
+        android:id="@+id/item_cbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/item_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:focusable="false"
+        android:checked="true"/>
+
+
+</RelativeLayout>

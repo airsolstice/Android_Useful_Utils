@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomImageTxtView">
+        <attr name="Content">
+            <enum name="Default" value="0"></enum>
+            <enum name="Count" value="1"></enum>
+            <enum name="Password" value="2"></enum>
+        </attr>
+        <attr name="Text" format="string" />
+        <attr name="Src" format="integer" />
+        <attr name="Oriental">
+            <enum name="Horizontal" value="1"></enum>
+            <enum name="Vertical" value="0"></enum>
+        </attr>
+        <attr name="TextColor" format="integer" />
+        <attr name="TextSize" format="integer" />
+    </declare-styleable>
+
+</resources>

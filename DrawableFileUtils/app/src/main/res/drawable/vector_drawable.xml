@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:width="256dp"
+        android:height="256dp"
+        android:viewportHeight="256"
+        android:viewportWidth="256"
+        tools:ignore="NewApi">
+
+    <group
+        android:name="shape_layer_1"
+        android:translateX="128"
+        android:translateY="128">
+        <group android:name="sun">
+            <path
+                android:name="ellipse_path_1"
+                android:fillColor="#ffff8000"
+                android:pathData="m -25 0 a 25,25 0 1,0 50,0 a 25,25 0 1,0 -50,0"/>
+
+            <group
+                android:name="earth"
+                android:translateX="75">
+                <path
+                    android:name="ellipse_path_1_1"
+                    android:fillColor="#ff5656ea"
+                    android:pathData="m -10 0 a 10,10 0 1,0 20,0 a 10,10 0 1,0 -20,0"/>
+
+                <group
+                    android:name="moon"
+                    android:translateX="25">
+
+                    <!--实现矢量图形的绘制，这里绘制了一个心形-->
+
+                    <path
+                        android:name="ellipse_path_1_2"
+                        android:fillColor="#ffadadad"
+                        android:pathData="M20.5,9.5
+                        c-1.955,0,-3.83,1.268,-4.5,3
+                        c-0.67,-1.732,-2.547,-3,-4.5,-3
+                        C8.957,9.5,7,11.432,7,14
+                        c0,3.53,3.793,6.257,9,11.5
+                        c5.207,-5.242,9,-7.97,9,-11.5
+                        C25,11.432,23.043,9.5,20.5,9.5z"/>
+                </group>
+            </group>
+        </group>
+    </group>
+
+</vector>

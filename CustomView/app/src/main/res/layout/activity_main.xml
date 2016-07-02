@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res/com.hs.customview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                tools:ignore="ResAuto">
+
+    <TextView
+        android:text="自定义菊花样式进度条"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"/>
+
+
+    <com.hs.cv.CustomProgressBar
+        android:id="@+id/custom_bar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+    android:layout_centerHorizontal="true"
+        android:text="cancel"
+        android:id="@+id/cancel"
+        android:layout_alignBottom="@+id/custom_bar"/>
+
+
+    <TextView
+        android:text="自定义图文框"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel"
+        android:layout_marginTop="20dp"
+    />
+
+
+    <com.hs.cv.CustomImageTxtView
+        android:id="@+id/count"
+        android:layout_width="@dimen/defWidth"
+        android:layout_height="@dimen/defHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="#616161"
+        app:Content="Count"
+        app:Oriental="Horizontal"
+        app:Src="@drawable/ic_launcher"
+        app:Text="123456789@qq.com"
+        app:TextColor="@android:color/white"
+        app:TextSize="@dimen/text_size" >
+
+    </com.hs.cv.CustomImageTxtView>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/logining"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:indeterminateDrawable="@drawable/circle_loading"
+        android:layout_alignTop="@+id/cancel"
+        android:layout_alignRight="@+id/count"
+        android:layout_alignEnd="@+id/count"/>
+
+</RelativeLayout>

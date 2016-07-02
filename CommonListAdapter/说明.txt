@@ -1,0 +1,5 @@
+通用的Adapter
+实现了大量图片的加载，包括了文件缓存和内存缓存
+实现了Bitmap的压缩和拉伸，自适应控件
+
+里面的ViewHolder，BitmapDecoder类需待完善
